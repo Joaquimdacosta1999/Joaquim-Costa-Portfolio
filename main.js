@@ -60,7 +60,7 @@ if (contactForm) {
 }
 
 // 4. Contact Form Validation
-/*
+
 const contactForm = document.querySelector('.contact-form-container form');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
@@ -77,7 +77,7 @@ if (contactForm) {
     }
   });
 }
-*/
+
 // Add light theme styles
 const lightTheme = document.createElement('style');
 lightTheme.textContent = `
