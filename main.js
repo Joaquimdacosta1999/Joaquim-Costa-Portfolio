@@ -43,7 +43,24 @@ if (typingTarget) {
   typeEffect(typingTarget, 'Full Stack Developer');
 }
 
+// 3. Form Validation
+const contactForm = document.querySelector("form");
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    const name = contactForm.name.value.trim();
+    const email = contactForm.email.value.trim();
+
+    if (!name || !email) {
+      alert("Please Fill in your name and email!");
+      e.preventDefault(); // Stop form submission
+    } else {
+      alert("Thank you for reaching out! Your message has been sent.");
+    }
+  });
+}
+
 // 4. Contact Form Validation
+/*
 const contactForm = document.querySelector('.contact-form-container form');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
@@ -60,7 +77,7 @@ if (contactForm) {
     }
   });
 }
-
+*/
 // Add light theme styles
 const lightTheme = document.createElement('style');
 lightTheme.textContent = `
@@ -120,6 +137,7 @@ scrollBtn.addEventListener('click', () => {
 });
 
 // 8. Reveal Animations on Scroll
+/*
 const revealElements = document.querySelectorAll('.experience-item, .project-item, .skill-item-with-img, .certificate-section, .general-list');
 function revealOnScroll() {
   const triggerBottom = window.innerHeight * 0.9;
@@ -137,5 +155,6 @@ function revealOnScroll() {
 }
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('DOMContentLoaded', revealOnScroll);
+*/
 
 <script src="main.js"></script>
