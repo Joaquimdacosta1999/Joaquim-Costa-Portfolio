@@ -790,6 +790,15 @@ body {
     transform: scale(1.1);
 }
 
+.navbar a:focus,
+.social-icon:focus,
+.download-btn:focus,
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: 2px solid #22223b;
+    outline-offset: 2px;
+}
 
 .section-footer {
     text-align: center;
