@@ -29,10 +29,11 @@ body {
 
 .logo {
   position: relative;
-  font-size: 56px;
+  font-size: 40px;
   color: #ededed;
   text-decoration: none;
   font-weight: 600;
+  font-family: 'Times New Roman', serif;
 }
 
 .navbar a{
@@ -252,8 +253,8 @@ body {
 
 .section-footer {
   text-align: center;
-  margin-top: auto; /* Pushes the footer to the bottom of the page */
-  padding-top: 20px; /* Add padding to separate it from the experience section */
+  margin-top: auto;
+  padding-top: 20px; 
   border-top: 1px solid #ddd;
 }
 
@@ -300,7 +301,7 @@ body {
     padding-top: 10px;
 }
 
-/* Individual sections for university, professional, and general certifications */
+
 .university-container,
 .professional-container,
 .general-certification {
@@ -321,7 +322,7 @@ body {
     padding-bottom: 5px;
 }
 
-/* Styles for each individual certificate block */
+
 .certificate-section,
 .general-list {
     background-color: #081b29; /* Dark background for the block */
@@ -329,15 +330,15 @@ body {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a box shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 /* Hover effect for the blocks */
 .certificate-section:hover,
 .general-list:hover {
-    transform: translateY(-5px); /* Lift the block on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Flexbox layout for content inside each block */
