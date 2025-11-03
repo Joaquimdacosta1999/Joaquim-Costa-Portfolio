@@ -993,3 +993,8 @@ body {
   padding-top: 0;
   border-top: none;
 }
+
+.skip-link {
+  position: absolute; left: -999px; top: 0;
+}
+.skip-link:focus { left: 0; background:#000; color:#fff; padding:.5rem; }
