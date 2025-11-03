@@ -18,7 +18,7 @@
     <meta property="og:title" content="Joaquim Costa Portfolio">
     <meta property="og:description" content="Explore Joaquim Costa's work, skills, and projects.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/101906173?v=4">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:url" content="https://joaquim-costa-portfolio-95v3.vercel.app/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
@@ -32,51 +32,54 @@
 </head>
 <body>
     <!-- ===== Header Start ===== -->
-    <header class="header" aria-label="Main navigation">
-      <a href="#" class="logo">Joaquim Costa</a>
-      <nav class="navbar">
-        <a href="#home" class="active" aria-current="page">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+        <header class="header" aria-label="Main navigation">
+          <a href="#" class="logo" aria-label="Joaquim Costa - Home">Joaquim Costa</a>
+          <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="active" aria-current="page">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
     <!-- ===== Header End ===== -->
-
+  <main role="main">
     <!-- ===== Home Section Start ===== -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm Joaquim Costa</h1>
-        <h3>Full Stack Developer</h3>
-        <p>I’m an entry-level Full Stack Developer with a passion for building practical and creative projects that solve real-world problems. I enjoy contributing to open-source communities where I can learn from others and give back through code.</p>
-        <div class="btn-box">
-          <p><a href="./Asset/Joaquim Finda Da Costa CV.pdf" download="Joaquim_CV">Download CV</a></p>
-          <p><a href="mailto:joaquimdacosta1999@gmail.com">Let's Talk</a></p>
-        </div>
-      </div>
-      <div class="home-sci">
-        <a href="https://github.com/Joaquimdacosta1999" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/joaquim-costa-145503187/" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:joaquimdacosta1999@gmail.com" target="_blank" class="social-icon">
-          <i class="fas fa-envelope"></i>
-        </a>
-          <a href="https://www.freecodecamp.org/jfcosta" target="_blank" class="social-icon">
-          <i class="fab fa-free-code-camp"></i>
-        </a>
-      </div>
-      <span class="home-imgHover"></span>
-    </section>
-    <!-- ===== Home Section End ===== -->
+      <section class="home" id="home" aria-labelledby="home-heading">
+          <div class="home-content">
+            <h1>Hi, I'm Joaquim Costa</h1>
+            <h3>Full Stack Developer</h3>
+            <p>I’m an entry-level Full Stack Developer with a passion for building practical and creative projects that solve real-world problems. I enjoy contributing to open-source communities where I can learn from others and give back through code.</p>
+            <div class="btn-box" role="group" aria-label="Download CV or contact">
+              <p><a href="./Asset/Joaquim Finda Da Costa CV.pdf" download="Joaquim_CV">Download CV</a></p>
+              <p><a href="mailto:joaquimdacosta1999@gmail.com">Let's Talk</a></p>
+            </div>
+          </div>
 
-    <!-- ===== About Section Start ===== -->
-    <section class="about" id="about">
-      <div class="about-section">
+      <nav class="home-sci" aria-label="Social media links">
+          <a href="https://github.com/Joaquimdacosta1999" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/joaquim-costa-145503187/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:joaquimdacosta1999@gmail.com" target="_blank" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+            <a href="https://www.freecodecamp.org/jfcosta" target="_blank" class="social-icon">
+            <i class="fab fa-free-code-camp"></i>
+          </a>
+      </nav>
+      
+      <span class="home-imgHover" aria-hidden="true"></span>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      
+      <div class="about-section" aria-labelledby="about-heading">
         <h2>About</h2>
         <p>I am an IT professional excelling in customer service, technical support, and junior software development, driven by a passion for solving challenges. I
         bring to life innovative projects like a personal portfolio website and engaging applications, reflecting my creative and technical skills. Actively contributing
@@ -87,7 +90,7 @@
       <div class="experience-container">
 
         <h2>Experience</h2>
-         <div class="experience-item">
+         <div class="experience-item" role="region" aria-labelledby="experience-heading">
           <h3>GitHub Community</h3>
           <h4>Open Source Contributor</h4>
           <p>Full-time · June 2024 - Present · 4 mos</p>
@@ -147,10 +150,12 @@ solutions.</li>
         </div>
       </div>
     </section>
-    <!-- ===== About Section End ===== -->
-    <!-- ===== Education Section Start ===== -->
-    <section class="education-section" id="education">
-      <!-- Section Footer moved from About to appear above Education -->
+    <!-- About Section End -->
+
+    <!-- Education Section Start -->
+
+    <section class="education-section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
       <div class="section-footer">
         <div class="social-icons">
           <a href="https://github.com/Joaquimdacosta1999" target="_blank"><i class="fab fa-github"></i></a>
@@ -159,10 +164,12 @@ solutions.</li>
           <a href="https://www.freecodecamp.org/jfcosta" target="_blank"><i class="fab fa-free-code-camp"></i></a>
         </div>
       </div>
+
       <h2>Education</h2>
+
       <!-- University Education -->
-      <div class="university-container">
-        <h3>University Education</h3>
+      <div class="university-container" role="region" aria-labelledby="uni-heading">
+        <h3 id="uni-heading">University Education</h3>
         <img src="./Asset/Diploma%20Transcript.png" alt="Diploma Transcript" width="300" href="#">
         <ul>
           <li><strong>Advance Diploma:</strong> Business Management</li>
@@ -257,20 +264,22 @@ solutions.</li>
 
       </div>
       <!-- Education: Section Footer Social Icons -->
-      <div class="section-footer">
+      <nav class="section-footer" aria-label="Social media links (footer)">
         <div class="social-icons">
           <a href="https://github.com/Joaquimdacosta1999" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/joaquim-costa-145503187/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="mailto:joaquimdacosta1999@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         <a href="https://www.freecodecamp.org/jfcosta" target="_blank"><i class="fab fa-free-code-camp"></i></a>
         </div>
-      </div>
+      </nav>
+
     </section>
+
     <!-- ===== Education Section End ===== -->
 
     <!-- ===== Skills Section Start ===== -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
       <p>My journey as a developer and IT professional has allowed me to build a versatile set of skills. Here's a look at my technical expertise and soft skills, covering Front-End Development, IT Service & Networking, Tools & Technologies, and Soft Skills.</p>
       <div class="skills-container">
         <div class="skill-category">
@@ -468,12 +477,17 @@ solutions.</li>
     <!-- ===== Skills Section End ===== -->
 
     <!-- ===== Projects Section Start ===== -->
-    <section id="projects">
-      <h2>Projects</h2>
+     
+    <section id="projects" aria-labelledby="projects-heading">
+      
+      <h2 id="projects-heading">Projects</h2>
       <p>A selection of projects I've built to apply my skills and solve real-world problems.</p>
-      <div class="projects-grid">
+      
+      <div class="projects-grid" role="list">
+        
         <!-- Project 1: E-commerce Site -->
-        <div class="project-item">
+
+        <div class="project-item" role="listitem">
           <img src="./Asset/Portfolio.png" alt="Project 1 Image">
           <div class="project-details">
             <h4>Portfolio Website</h4>
@@ -485,8 +499,9 @@ Implemented smooth scrolling navigation, an animated typing effect, and a scroll
             <a href="https://github.com/Joaquimdacosta1999/Joaquim-Costa-Portfolio" target="_blank">Source</a>
           </div>
         </div>
+        
         <!-- Project 2: Real-time Chat App -->
-        <div class="project-item">
+        <div class="project-item" role="listitem">
           <img src="/Asset/AutoExchange.png" alt="Project 2 Image" href="">
           <div class="project-details">
             <h4>AutoExchange Website</h4>
@@ -512,34 +527,28 @@ on delivering market-specific digital solutions.</p>
             <a href="https://github.com/Joaquimdacosta1999/Digital-Clock">Source</a>
           </div>
         </div>
-        
-      </div> <div class="section-footer">
-        <!-- Projects: Section Footer Social Icons -->
-        <div class="social-icons">
-          <a href="https://github.com/Joaquimdacosta1999" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/joaquim-costa-4b1b6a1b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:joaquimdacosta1999@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.freecodecamp.org/jfcosta" target="_blank"><i class="fab fa-free-code-camp"></i></a>
-        </div>
       </div>
+
     </section>
     <!-- ===== Projects Section End ===== -->
 
     <!-- ===== Contact Section Start ===== -->
-    <section id="contact">
-      <h2>Contact Me</h2>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
       <p>I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out to me using the form below or connect with me on social media.</p>
+      
       <div class="contact-form-container">
         <!-- Contact: Email Form -->
-        <form action="https://formspree.io/f/your-form-id" method="post" class="contact-form">
+        <form action="https://formspree.io/f/your-form-id" method="post" class="contact-form" novalidate>
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Full Name" required aria-describedby="name-error">
+              <input type="text" id="name" name="name" required aria-describedby="name-error" placeholder="Full Name">
               <span id="name-error" class="error" style="display: none; color: #e74c3c;">Please enter your name.</span>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="Email Address" required aria-describedby="email-error">
+              <input type="email" id="email" name="email" required aria-describedby="email-error" placeholder="Email Address">
               <span id="email-error" class="error" style="display: none; color: #e74c3c;">Please enter a valid email.</span>
             </div>
             <div class="form-group">
@@ -556,7 +565,7 @@ on delivering market-specific digital solutions.</p>
       </form>
       </div>
       <!-- Contact: Social Icons -->
-      <div class="contact-social-icons">
+      <nav class="contact-social-icons" aria-label="Social media links (contact)">
         <a href="https://github.com/Joaquimdacosta1999" target="_blank" class="social-icon">
           <i class="fab fa-github"></i>
         </a>
@@ -569,8 +578,11 @@ on delivering market-specific digital solutions.</p>
           <a href="https://www.freecodecamp.org/jfcosta" target="_blank" class="social-icon">
           <i class="fab fa-free-code-camp"></i>
         </a>
-      </div>
+      </nav>
     </section>
+    </main>
+
+    <a href="#home" class="skip-link">Skip to main content</a>
     <!-- ===== Contact Section End ===== -->
   </body>
 </html>
