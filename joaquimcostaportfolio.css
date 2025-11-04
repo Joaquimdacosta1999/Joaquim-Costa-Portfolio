@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+    :root {
+      --font-primary: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      --font-icons: 'Font Awesome 6 Free', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    }
 
+    body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea {
+      font-family: var(--font-primary);
+      font-display: swap;
+    }
+
+    /* === Code / Terminal === */
+    code, pre, kbd, samp {
+      font-family: var(--font-mono);
+    }
+
+    /* === Icons (Font Awesome fallback) === */
+    [class^="fa-"], [class*=" fa-"], .fab, .fas, .far, .fal, .fad {
+      font-family: var(--font-icons);
+      font-weight: 900;
+    }
+
+    /* === FOUT Prevention === */
+    @font-face {
+      font-family: 'Inter';
+      src: local('Inter'), local('Inter-Regular');
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      src: local('JetBrains Mono'), local('JetBrainsMono-Regular');
+      font-display: swap;
+    }
 
  *{
   margin: 0;
