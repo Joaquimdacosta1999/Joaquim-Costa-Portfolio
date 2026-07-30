@@ -35,8 +35,4 @@ This is my the personal portfolio website, showcasing projects, skills, experien
 - Modify `joaquimcostaportfolio.css` for custom styles.
 - Add or edit JavaScript features in `main.js`.
 
-## License
-
-See [LICENSE](LICENSE) for details.
-
 ---
